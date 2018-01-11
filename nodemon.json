@@ -1,0 +1,15 @@
+{
+    "restartable": "rs",
+    "verbose": false,
+    "env": {
+        "NODE_ENV": "development"
+    },
+    "ignore": [
+        ".git",
+        ".idea",
+        "node_modules",
+        "README.md",
+        "package.json",
+        "package-lock.json"
+    ]
+}
