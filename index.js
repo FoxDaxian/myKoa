@@ -23,7 +23,6 @@ const handler = async (ctx, next) => {
         ctx.response.body = err
         error('出错啦', err.message)
     }
-    
 }
 app.use(logger)
 app.use(handler)
