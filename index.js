@@ -1,8 +1,8 @@
 /*
  * @Author: fox 
  * @Date: 2018-01-12 15:37:50 
- * @Last Modified by:   fox 
- * @Last Modified time: 2018-01-12 15:37:50 
+ * @Last Modified by: fox
+ * @Last Modified time: 2018-01-12 17:17:23
  */
 
 const Koa = require('koa')
@@ -15,6 +15,7 @@ const debug = require('debug')('fox')
 const error = require('debug')('fox_Error')
 const log = require('debug')('fox_Info')
 const base_log = require('debug')('请求基本信息')
+const chalk = require('chalk') // 更改log颜色的包
 
 const logger = (ctx, next) => {
     base_log(ctx.method)

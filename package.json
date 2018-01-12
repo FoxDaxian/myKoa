@@ -4,9 +4,11 @@
   "description": "koa",
   "main": "index.js",
   "dependencies": {
-    "koa": "^2.4.1"
+    "koa": "^2.4.1",
+    "rxjs": "^5.5.6"
   },
   "devDependencies": {
+    "chalk": "^2.3.0",
     "cross-env": "^5.1.3",
     "debug": "^3.1.0",
     "nodemon": "^1.14.10"
@@ -14,7 +16,8 @@
   "scripts": {
     "dev": "DEBUG=*,-nodemon cross-env NODE_ENV=development nodemon index",
     "path": "DEBUG=*,-nodemon nodemon path.js",
-    "process": "DEBUG=*,-nodemon nodemon process.js"
+    "process": "DEBUG=*,-nodemon nodemon process.js",
+    "rx": "DEBUG=*,-nodemon nodemon rx.js"
   },
   "repository": {
     "type": "git",
