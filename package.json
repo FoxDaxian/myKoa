@@ -17,7 +17,8 @@
     "dev": "DEBUG=*,-nodemon cross-env NODE_ENV=development nodemon index",
     "path": "DEBUG=*,-nodemon nodemon path.js",
     "process": "DEBUG=*,-nodemon nodemon process.js",
-    "rx": "DEBUG=*,-nodemon nodemon rx.js"
+    "rx": "DEBUG=*,-nodemon nodemon rx.js",
+    "http": "cross-env DEBUG=*,-nodemon nodemon http.js"
   },
   "repository": {
     "type": "git",
