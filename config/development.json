@@ -1,0 +1,7 @@
+{
+    "custom": {
+        "port": 3000,
+        "assets": "../static/",
+        "router": "../routers/dev/"
+    }
+}
