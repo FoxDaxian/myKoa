@@ -24,7 +24,9 @@
     "rx": "DEBUG=*,-nodemon nodemon rx.js",
     "http": "cross-env DEBUG=*,-nodemon,-babel NODE_ENV=production nodemon http.js --exec babel-node --presets es2015,stage-2",
     "qs": "DEBUG=info nodemon qs",
-    "event": "DEBUG=info,error nodemon event.js"
+    "event": "DEBUG=info,error nodemon event.js",
+    "http2": "DEBUG=info,error nodemon http2.js",
+    "cp": "DEBUG=info nodemon child_process.js"
   },
   "repository": {
     "type": "git",
