@@ -1,0 +1,11 @@
+{
+    "custom": {
+        "port": 3000,
+        "assets": "../static/",
+        "router": "../routers/dev/",
+        "logColor": {
+            "error": 1,
+            "info": 4
+        }
+    }
+}

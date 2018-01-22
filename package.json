@@ -1,0 +1,45 @@
+{
+  "name": "myKoa",
+  "version": "1.0.0",
+  "description": "koa",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^2.4.1",
+    "rxjs": "^5.5.6"
+  },
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "chalk": "^2.3.0",
+    "config": "^1.29.2",
+    "cross-env": "^5.1.3",
+    "debug": "^3.1.0",
+    "nodemon": "^1.14.10"
+  },
+  "scripts": {
+    "dev": "DEBUG=*,-nodemon cross-env NODE_ENV=development nodemon index",
+    "path": "DEBUG=*,-nodemon nodemon path.js",
+    "process": "DEBUG=*,-nodemon nodemon process.js",
+    "rx": "DEBUG=*,-nodemon nodemon rx.js",
+    "http": "cross-env DEBUG=*,-nodemon,-babel NODE_ENV=production nodemon http.js --exec babel-node --presets es2015,stage-2",
+    "qs": "DEBUG=info nodemon qs",
+    "event": "DEBUG=info,error nodemon event.js",
+    "http2": "DEBUG=info,error nodemon http2.js",
+    "cp": "DEBUG=info nodemon child_process.js",
+    "test": "DEBUG=info: ava test.js",
+    "debug": "cross-env DEBUG=*,-nodemon DEBUG_LEVEL=warn nodemon debug.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a13821190779/myKoa.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a13821190779/myKoa/issues"
+  },
+  "homepage": "https://github.com/a13821190779/myKoa#readme"
+}
