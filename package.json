@@ -28,7 +28,8 @@
     "event": "DEBUG=info,error nodemon event.js",
     "http2": "DEBUG=info,error nodemon http2.js",
     "cp": "DEBUG=info nodemon child_process.js",
-    "test": "DEBUG=info: ava test.js"
+    "test": "DEBUG=info: ava test.js",
+    "debug": "cross-env DEBUG=*,-nodemon DEBUG_LEVEL=warn nodemon debug.js"
   },
   "repository": {
     "type": "git",
